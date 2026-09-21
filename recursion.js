@@ -9,4 +9,4 @@ function isEven(n) {
     return isEven(n - 2);
   }
 }
-console.log(isEven());
+console.log(isEven(prompt("enter a number")));
