@@ -1,4 +1,4 @@
-let size = 8;
+let size = prompt("pick a muber");
 let board = "";
 for (let setOne = 0; setOne < size; setOne++) {
   for (let setTwo = 0; setTwo < size; setTwo++) {
