@@ -10,3 +10,15 @@ function range(qalong, qetellong, setepisi = 1) {
   return array;
 }
 console.log(range(0, 100, 5));
+
+function sum(something) {
+  let total = 0;
+
+  for (let i = 0; i < something.length; i++) {
+    total += something[i];
+  }
+
+  return total;
+}
+
+console.log(sum(range(0, 100, 5)));
