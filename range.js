@@ -9,7 +9,7 @@ function range(qalong, qetellong, setepisi = 1) {
     array.push(i);
   return array;
 }
-console.log(range(0, 100, 5));
+console.log(range(5, 2, -1));
 
 function sum(something) {
   let total = 0;
@@ -21,4 +21,4 @@ function sum(something) {
   return total;
 }
 
-console.log(sum(range(0, 100, 5)));
+console.log(sum(range(5, 2, -1)));
