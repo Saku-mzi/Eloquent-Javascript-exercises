@@ -8,7 +8,7 @@ function arrayToList(array) {
 
 console.log(arrayToList([10, 20]));
 function listToArray(list) {
-  let array = [];
+  const array = [];
   for (let node = list; node; node = node.rest) {
     array.push(node.value);
   }
