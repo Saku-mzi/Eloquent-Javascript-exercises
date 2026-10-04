@@ -8,14 +8,14 @@ function deepEqual(a, b) {
   const buite = Object.keys(b);
   if (binne.length !== buite.length) return false;
 
-  for (let key of binne) {
+  for (const key of binne) {
     if (!buite.includes(key) || !deepEqual(a[key], b[key])) return false;
   }
 
   return true;
 }
 
-let obj = { here: { is: "an" }, object: 2 };
+const obj = { here: { is: "an" }, object: 2 };
 
 console.log(deepEqual(obj, obj));
 
