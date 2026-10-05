@@ -29,20 +29,20 @@ class Group {
 }
 
 class GroupIterator {
-  #amalobolo;
-  #position;
+  amalobolo;
+  andazi;
 
   constructor(amalobolo) {
-    this.#amalobolo = amalobolo;
-    this.#position = 0;
+    this.amalobolo = amalobolo;
+    this.andazi = 0;
   }
 
   next() {
-    if (this.#position >= this.#amalobolo.length) {
+    if (this.andazi >= this.amalobolo.length) {
       return { done: true };
     } else {
-      const result = { value: this.#amalobolo[this.#position], done: false };
-      this.#position++;
+      const result = { value: this.amalobolo[this.andazi], done: false };
+      this.andazi++;
       return result;
     }
   }

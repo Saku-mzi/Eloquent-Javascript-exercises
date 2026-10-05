@@ -1,18 +1,18 @@
 class Group {
-  #amalobolo = [];
+  amalobolo = [];
 
   add(value) {
     if (!this.has(value)) {
-      this.#amalobolo.push(value);
+      this.amalobolo.push(value);
     }
   }
 
   delete(value) {
-    this.#amalobolo = this.#amalobolo.filter((ye) => ye !== value);
+    this.amalobolo = this.amalobolo.filter((ye) => ye !== value);
   }
 
   has(value) {
-    return this.#amalobolo.includes(value);
+    return this.amalobolo.includes(value);
   }
 
   static from(collection) {
